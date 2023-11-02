@@ -30,6 +30,28 @@ https://github.com/KhronosGroup/OpenGL-Registry
         <type>typedef int <name>GLsizei</name>;</type>
         <type requires="khrplatform">typedef khronos_float_t <name>GLfloat</name>;</type>
         <type requires="khrplatform">typedef khronos_float_t <name>GLclampf</name>;</type>
+
+        <type>typedef struct {
+    uint  count;
+    uint  instanceCount;
+    uint  first;
+    uint  baseInstance;
+} <name>DrawArraysIndirectCommand</name>;</type>
+
+        <type>typedef struct {
+    uint  count;
+    uint  instanceCount;
+    uint  firstIndex;
+    int   baseVertex;
+    uint  baseInstance;
+} <name>DrawElementsIndirectCommand</name>;</type>
+
+        <type>typedef struct {
+    uint  num_groups_x;
+    uint  num_groups_y;
+    uint  num_groups_z;
+} <name>DispatchIndirectCommand</name>;</type>
+
         <type>typedef double <name>GLdouble</name>;</type>
         <type>typedef double <name>GLclampd</name>;</type>
         <type>typedef void *<name>GLeglClientBufferEXT</name>;</type>
